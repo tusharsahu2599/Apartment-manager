@@ -4,9 +4,9 @@ const connect =  require("./configs/db");
 const managerController = require("./controllers/manager.controller");
 const residentController = require("./controllers/resident.controller");
 const flatController = require("./controllers/flat.controller");
+require("dotenv").config();
 
 const PORT =  process.env.PORT || 5000;
-
 const app = express();
 app.use(cors());
 app.use(express.json());
