@@ -1,16 +1,15 @@
-// import "./Home.css"
+
+import { Link } from "react-router-dom";
 
 export const Home = () =>{
 
-    return (
-    <div id="homeMain">
+    return (<div id="homeMain">
         <div id="homeDiv_1">
-            <h1 id="homeHead">Welcome to MakeMyHouse</h1>
-            <p>A House for Everyone</p>
-            <button onClick={handleClick}>Lets Go..</button>
+        <h1 id="homeHead">Welcome to MakeMyHouse</h1>
+        <p>A House for Everyone</p>
+        <button><Link to="/login">Lets Go..</Link></button>
         </div>
         
-    </div>
-    )
+    </div>)
 }
 

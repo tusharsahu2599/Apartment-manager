@@ -1,12 +1,10 @@
 // import "./Flat.css";
 import { useDispatch, useSelector } from "react-redux";
 // import { authReducer } from "../Redux/auth/reducer";
-import { flatsReducer}  from "../Redux/reducer";
 
 
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 
 

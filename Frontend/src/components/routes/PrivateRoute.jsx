@@ -1,10 +1,14 @@
-import { useContext } from "react"
+
 import {Navigate} from "react-router-dom"
-import {AuthContext} from "../context/AuthContext"
+import { useState, useSelector } from "react"
+import { useDispatch } from "react-redux"
 
 
-export const PrivateRoute = ({children}) => {
-const {token} = useContext(AuthContext)
+
+export const PrivateRoute = () => {
+const dispatch = useDispatch();
+let token = useSelector(state => state.auth);
+console.log(token);
 
 if(!token) {
     return <Navigate to={"/login"}/>
