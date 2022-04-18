@@ -12,20 +12,19 @@ import {Register} from './components/register/register';
 import {PrivateRoute} from './components/routes/PrivateRoute';
 
 
-
 function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/flat/:id" element={<PrivateRoute><FlatDetails /></PrivateRoute>}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="register" element={<Register />}></Route>
         <Route path="/flat" element={<PrivateRoute><Flat /></PrivateRoute>}></Route>
+        <Route path="/flat/:id" element={<PrivateRoute><FlatDetails /></PrivateRoute>}></Route>
       </Routes>
     </div>
-  )
+  );
 }
 
 export default App

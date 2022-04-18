@@ -74,8 +74,8 @@ export const Register =() =>{
         name="password"
         placeholder="Password"
       />
-      <button id="regBtn" onClick={register}>Register</button>
-     <p id="logLine"> Already Registered ? <Link id="logLink" to={"/login"}>Log in</Link></p>
+      <button onClick={register}>Register</button>
+     <p> Already Registered ? <Link id="logLink" to={"/login"}>Log in</Link></p>
     </div>
     );
 }

@@ -1,11 +1,11 @@
 // import { APARTMENT_DETAILS } from "./action";
-let initialState = {
-    data: []
-};
+// let initialState = {
+//     data: []
+// };
 
 
-const flatsReducer = (store = initialState, action) => {
-  // console.log(action);
+const flatsReducer = (store =[], action) => {
+  console.log(action);
   switch (action.type) {  
     
     case "APARTMENT_DETAILS":
