@@ -39,7 +39,7 @@ export const Flat = () => {
 
     try {
       fetch(
-        `https://apartment-flat-manager.herokuapp.com/flat/${filter}/${value}/?page=${page}&size=${3}`
+        `https://apartment-flat-manager.herokuapp.com/flat/${filter}/${value}/?page=${page}&size=${10}`
       ).then((d) => d.json()) 
       .then((res) => {
           console.log(res.flats);

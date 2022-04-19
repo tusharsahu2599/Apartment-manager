@@ -7,8 +7,8 @@ import {Home} from './components/home/Home';
 import {Flat} from './components/flatdetails/Flat';
 import {FlatDetails} from './components/flatdetails/FlatDetails';
 
-import {Login} from './components/login/login';
-import {Register} from './components/register/register';
+import {Login} from './components/login/Login';
+import {Register} from './components/register/Register';
 import {PrivateRoute} from './components/routes/PrivateRoute';
 
 
@@ -21,7 +21,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="register" element={<Register />}></Route>
         <Route path="/flat" element={<PrivateRoute><Flat /></PrivateRoute>}></Route>
-        <Route path="/flat/:id" element={<PrivateRoute><FlatDetails /></PrivateRoute>}></Route>
+        <Route path="/flat/:id" element={<PrivateRoute><FlatDetails/></PrivateRoute>}></Route>
       </Routes>
     </div>
   );
