@@ -1,4 +1,3 @@
-// import "./Navbar.css";
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
@@ -13,6 +12,7 @@ export const Navbar = () => {
   const logout = () => {
     localStorage.removeItem("user_token");
     handleToken("");
+    
     navigate("/");
   };
 
@@ -22,8 +22,8 @@ export const Navbar = () => {
         Home
       </Link>
       {token === null ? 
-      <Link className="link" to={"/login"}>Log In</Link> :
-      <button id="logoutBtn" onClick={logout}>
+      <Link to={"/login"}>Log In</Link> :
+      <button onClick={logout}>
          Log Out
         </button>
        

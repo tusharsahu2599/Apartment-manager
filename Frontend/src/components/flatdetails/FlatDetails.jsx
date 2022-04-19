@@ -29,12 +29,13 @@ export const FlatDetails = () => {
   }
 
   return (
-    <div id="flatDetailDiv">
-      <button id="backBtn" onClick={backToPrev}>🡰</button>
-      <div id="imgDiv">
+    <div 
+    >
+      <button onClick={backToPrev}>🡰</button>
+      <div>
         <img src={data.image} alt="NA" />
       </div>
-      <div id="flatData">
+      <div >
         <p>
           <b>Block : </b> {data.block}
         </p>

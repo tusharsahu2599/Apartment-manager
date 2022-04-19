@@ -52,18 +52,18 @@ export const Flat = () => {
   };
 
   return (
-    <div id="flatDivMain">
-      <div id="sort_filter_div">
-        <h1 id="sort_filter_div_head">Sort by Flat Number</h1>
-        <div id="sortDiv">
-          <select name="" id="sortbyFlatNumber" onChange={handleValue}>
+    <div >
+      <div >
+        <h1 >Sort by Flat Number</h1>
+        <div>
+          <select name="" onChange={handleValue}>
             <option value="0">Flat Number</option>
             <option value="1">Lower</option>
             <option value="-1">Upper</option>
           </select>
-          <div id="filterDiv">
-            <h1 id="sort_filter_div_head">Filter by Resident Type</h1>
-            <select name="" id="filterByType" onChange={handleFilter}>
+          <div >
+            <h1 >Filter by Resident Type</h1>
+            <select onChange={handleFilter}>
               <option value="0">Resident Type</option>
               <option value="Owner">Owner</option>
               <option value="Tenant">Tenant</option>
@@ -71,7 +71,7 @@ export const Flat = () => {
           </div>
         </div>
       </div>
-      <div id="flatList">
+      <div>
         <table>
           <tr>
             <th>Block</th>
@@ -82,30 +82,28 @@ export const Flat = () => {
           </tr>
 
           {allData.map((e, i) => (
-            <tr className="flatData" key={i}>
+            <tr  key={i}>
               <td>{e.block}</td>
 
               <td>{e.flat_number}</td>
               <td>{e.type}</td>
               <td>{e.residents.length}</td>
-              <Link className="flatListLink" to={`/flat/${e._id}`}>
+              <Link  to={`/flat/${e._id}`}>
                 <td>
-                  <img className="flatImg" src={e.image} alt="NA" />
+                  <img  src={e.image} alt="NA" />
                 </td>
               </Link>
             </tr>
           ))}
         </table>
-        <div id="btnDiv">
+        <div>
           <button
-            className="paginationBtn"
             disabled={page === 1}
             onClick={() => setPage(page - 1)}
           >
             Previous
           </button>
           <button
-            className="paginationBtn"
             disabled={page === limit}
             onClick={() => setPage(page + 1)}
           >

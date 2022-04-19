@@ -1,4 +1,3 @@
-// import "./Register.css"
 import { useState } from "react";
 import {Link, useNavigate} from "react-router-dom"; 
 
@@ -75,7 +74,7 @@ export const Register =() =>{
         placeholder="Password"
       />
       <button onClick={register}>Register</button>
-     <p> Already Registered ? <Link id="logLink" to={"/login"}>Log in</Link></p>
+     <p> Already Registered ? <Link to={"/login"}>Log in</Link></p>
     </div>
     );
 }

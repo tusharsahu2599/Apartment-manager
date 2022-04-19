@@ -72,7 +72,7 @@ export const Login = () => {
         placeholder="Password"
       />
       <button onClick={login}>Log In</button>
-     <p > Don't have a account ? <Link id="regLink" to={"/register"}>Register</Link></p>
+     <p > Don't have a account ? <Link to={"/register"}>Register</Link></p>
     </div>
   );
 };

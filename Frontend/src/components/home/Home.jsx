@@ -5,8 +5,8 @@ export const Home = () =>{
 
     return (<div >
         <div>
-        <h1 >Welcome to MakeMyHouse</h1>
-        <p>A House for Everyone</p>
+        <h1 >Welcome to my house website</h1>
+        <p>check houses after login</p>
         <button><Link to="/login">Lets Go..</Link></button>
         </div>
         
