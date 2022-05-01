@@ -17,13 +17,57 @@ export const Navbar = () => {
   };
 
   return (
-    <div id="navbar">
-      <Link className="link" to={"/"}>
-        Home
+    <div id="navbar"
+    style={{ 
+    height: "100px",
+    display: "flex",
+    flexDirection: "row",
+    position: "sticky",
+    top : "0",
+    boxShadow : "0px 0px 10px #ccc",
+    
+    // alignItems: "center",
+    // justifyContent: "center",
+    backgroundColor: "teal",
+
+  }}
+    >
+      <Link 
+      style={{
+        color: "#000000",
+        textDecoration: "none",
+        fontWeight: "bold",
+        fontSize: "1.2rem",
+        padding: "2vw"
+      }}
+      className="link" to={"/"}>
+          Home
       </Link>
+
       {token === null ? 
-      <Link to={"/login"}>Log In</Link> :
-      <button onClick={logout}>
+      <Link 
+      style={{
+        color: "#000000",
+        textDecoration: "none",
+        fontWeight: "bold",
+        fontSize: "1.2rem",
+        padding: "2vw",
+      }}
+      to={"/login"}>
+          Log In
+      </Link> :
+      <button 
+      style={{
+        paddingLeft: "8vw",
+        fontSize: "1.5rem",
+        fontWeight: "bold",
+        color: "#000000",
+        margin: "0",
+        padding: "0",
+        marginTop: "2rem",
+
+      }}
+      onClick={logout}>
          Log Out
         </button>
        
