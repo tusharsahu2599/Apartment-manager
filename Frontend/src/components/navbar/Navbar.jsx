@@ -27,7 +27,7 @@ export const Navbar = () => {
     boxShadow : "0px 0px 10px #ccc",
     
     // alignItems: "center",
-    // justifyContent: "center",
+    justifyContent: "space-between",
     backgroundColor: "teal",
 
   }}
